@@ -1,0 +1,17 @@
+{
+  "name": "bike-rental",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "mobile": "npm run start --workspace=mobile",
+    "admin": "npm run dev --workspace=admin",
+    "super-admin": "npm run dev --workspace=super-admin"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^57.0.0",
+    "turbo": "^2.0.0"
+  }
+}
